@@ -12,7 +12,7 @@ module.exports =
         },
         "sourceType": "module"
 	},
-    
+
     env:
     {
         "node": true
@@ -25,6 +25,15 @@ module.exports =
     {
         // Possible Problems
         "no-unused-vars": [1,
+			{
+				"vars": "local",
+				"args": "none",
+				"ignoreRestSiblings": false,
+				"argsIgnorePattern": "^_",
+				"caughtErrors": "none"
+			}
+		],
+        "@typescript-eslint/no-unused-vars": [1,
 			{
 				"vars": "local",
 				"args": "none",
