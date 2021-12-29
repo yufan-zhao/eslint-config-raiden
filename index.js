@@ -6,10 +6,10 @@ module.exports =
     parserOptions:
     {
 		"ecmaVersion": 2021,
-        "ecmaFeatures":
-        {
-            "jsx": true
-        },
+        // "ecmaFeatures":
+        // {
+        //     "jsx": true
+        // },
         "sourceType": "module"
 	},
 
@@ -20,10 +20,12 @@ module.exports =
 
 	plugins:
 	[
-		"@typescript-eslint"
+		"plugin:vue/vue3-essential",
+		"eslint:recommended",
+		"@vue/typescript/recommended"
 	],
 
-	parser: "@typescript-eslint/parser",
+	// parser: "@typescript-eslint/parser",
 
     /**
      * @see https://eslint.org/docs/rules/
