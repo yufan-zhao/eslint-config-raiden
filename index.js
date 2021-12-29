@@ -18,6 +18,16 @@ module.exports =
         "node": true
     },
 
+	plugins:
+	[
+		"@typescript-eslint"
+	],
+
+	parser:
+	[
+		"@typescript-eslint/parser"
+	],
+
     /**
      * @see https://eslint.org/docs/rules/
      */
