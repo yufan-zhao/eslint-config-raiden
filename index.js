@@ -23,10 +23,7 @@ module.exports =
 		"@typescript-eslint"
 	],
 
-	parser:
-	[
-		"@typescript-eslint/parser"
-	],
+	parser: "@typescript-eslint/parser",
 
     /**
      * @see https://eslint.org/docs/rules/
