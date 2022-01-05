@@ -56,6 +56,9 @@ module.exports =
 				"caughtErrors": "none"
 			}
 		],
+		"@typescript-eslint/no-explicit-any": [1,
+			{ "ignoreRestArgs": false }
+		],
 		// Suggestions
 		"no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
