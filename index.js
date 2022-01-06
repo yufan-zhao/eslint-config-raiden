@@ -47,18 +47,6 @@ module.exports =
 				"caughtErrors": "none"
 			}
 		],
-        "@typescript-eslint/no-unused-vars": [1,
-			{
-				"vars": "local",
-				"args": "none",
-				"ignoreRestSiblings": false,
-				"argsIgnorePattern": "^_",
-				"caughtErrors": "none"
-			}
-		],
-		"@typescript-eslint/no-explicit-any": [1,
-			{ "ignoreRestArgs": false }
-		],
 		// Suggestions
 		"no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
@@ -70,6 +58,27 @@ module.exports =
 		"brace-style": [2, "allman", {
 			"allowSingleLine": true
 		}],
-		"semi": [2, "always"]
+		"semi": [2, "always"],
+
+		/**
+		 * ts-eslint-part
+		 */
+		"@typescript-eslint/no-unused-vars": [1,
+			{
+				"vars": "local",
+				"args": "none",
+				"ignoreRestSiblings": false,
+				"argsIgnorePattern": "^_",
+				"caughtErrors": "none"
+			}
+		],
+		"@typescript-eslint/no-explicit-any": [1,
+			{ "ignoreRestArgs": false }
+		],
+		"@typescript-eslint/explicit-module-boundary-types": [1,
+			{
+				"allowTypedFunctionExpressions": false
+			}
+		]
     }
 };
