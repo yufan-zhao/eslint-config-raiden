@@ -73,7 +73,7 @@ module.exports =
 			}
 		],
 		"@typescript-eslint/no-explicit-any": [1,
-			{ "ignoreRestArgs": false }
+			{ "ignoreRestArgs": true }
 		],
 		"@typescript-eslint/explicit-module-boundary-types": [1,
 			{
