@@ -59,6 +59,7 @@ module.exports =
 			"allowSingleLine": true
 		}],
 		"semi": [2, "always"],
+		"prefer-rest-params": [0],
 
 		/**
 		 * ts-eslint-part
@@ -72,13 +73,7 @@ module.exports =
 				"caughtErrors": "none"
 			}
 		],
-		"@typescript-eslint/no-explicit-any": [1,
-			{ "ignoreRestArgs": true }
-		],
-		"@typescript-eslint/explicit-module-boundary-types": [1,
-			{
-				"allowTypedFunctionExpressions": false
-			}
-		]
+		"@typescript-eslint/no-explicit-any": [0],
+		"@typescript-eslint/explicit-module-boundary-types": [0]
     }
 };

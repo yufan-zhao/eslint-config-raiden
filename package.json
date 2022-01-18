@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-raiden",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "eslint config for raiden code style",
   "main": "index.js",
   "scripts": {
